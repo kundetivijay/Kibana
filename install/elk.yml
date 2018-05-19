@@ -1,0 +1,12 @@
+---
+# Playbook to install the ELK stack
+  - hosts: elk
+    remote_user: root
+    become: yes
+    become_user: root
+    roles:
+      - { role: java }
+      - { role: elasticsearch }
+      - { role: kibana }
+      - { role: nginx }
+      - { role: logstash }
