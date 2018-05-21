@@ -7,4 +7,4 @@ How to execute the playbook on Ubuntu server:
 3) Copy the public key to the remote server where you want to install the ELK.
 4) Modify the parameter "interface_name" in all file under group_vars directory.
                ansible_interfaces[1] ---> This value can be set from the setup module which will show the total number of interfaces and set accordingly.
-5) Now run the playbook, ansible-playbook site.yaml
+5) Now run the playbook, ansible-playbook elk.yaml
